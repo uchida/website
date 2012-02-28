@@ -58,7 +58,9 @@
   ライセンスは `CC-BY 3.0 <http://creativecommons.org/licenses/by/3.0/deed.ja>`_ です。
   原著作者のクレジットを表示すれば、自由に複製、頒布、展示、実演し、二次著作物を作成することができます。
 
-  PDF と html そしてチュートリアルで使うデータの一式は scipy_lecture_notes.zip から入手できます。
+  PDF と html そしてチュートリアルで使うデータの一式は
+  `scipy_lecture_notes.zip <scipy-lecture-notes/scipy_lecture_notes.zip>`_
+  から入手できます。
 
   原版情報
 

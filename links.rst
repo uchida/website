@@ -1,5 +1,8 @@
+ブックマーク
+============
+
 立命館大学
-==========
+----------
 
 - `非線形物理学研究室 <http://www.ike-dyn.ritsumei.ac.jp/>`_ /
   `物理科学科 <http://www.ritsumei.ac.jp/se/rp/physics/>`_ /
@@ -21,33 +24,33 @@
 - `立命館生活協同組合 <http://www.ritsco-op.jp/index.html>`_
 
 検索
-====
+----
 
 - `Google <http://www.google.co.jp/>`_
 - `Wolfram Alpha <http://www.wolframalpha.com/>`_
 - `Google Scholar <http://scholar.google.co.jp/>`_
 
 辞書
-====
+----
 
 - `JapanKnowledge+（学内） <http://www.jkn21.com/top/corpdisplay>`_
 - `Oxford English Dictionary（学内） <http://www.oed.com/>`_
-- `Oxford Advanced Learner’s Dictionary <http://oald8.oxfordlearnersdictionaries.com/?cc=global>`_
+- `Oxford Advanced Learner’s Dictionary <http://oald8.oxfordlearnersdictionaries.com/?cc-global>`_
 - `エキサイト辞書 <http://www.excite.co.jp/dictionary/>`_
 - `goo辞書 <http://dictionary.goo.ne.jp/>`_
 - `スペースアルク <http://www.alc.co.jp/>`_
-- `理科年表プレミアム（学内） <http://www.rikanenpyo.jp/member/?module=Member&action=Login>`_
+- `理科年表プレミアム（学内） <http://www.rikanenpyo.jp/member/?module-Member&action-Login>`_
 - `Yahoo!百科事典 <http://100.yahoo.co.jp/>`_
 - `e-Words <http://e-words.jp/>`_
 
 書店
-====
+----
 
 - `Amazon.co.jp <http://www.amazon.co.jp/>`_
 - `Amazon.com <http://www.amazon.com/>`_
 
 Mac
-===
+---
 
 - `Apple <http://www.apple.com/jp/>`_
 - `Apple Premium Reseller キットカット <http://www.kitcut.co.jp/>`_
@@ -56,13 +59,13 @@ Mac
 - `MacOS X WorkShop <http://www.bach-phys.ritsumei.ac.jp/OSXWS/>`_
 
 FreeBSD
-=======
+-------
 
 - `FreeBSD HandBook <http://www.freebsd.org/doc/handbook/>`_
 - `FrontPage - FreeBSD Wiki <http://wiki.freebsd.org/>`_
 
 Python
-======
+------
 
 - `Python documentation <http://docs.python.org/>`_ / `Python ドキュメント <http://www.python.jp/doc/release/>`_
 - `Python Package Index : PyPI <http://pypi.python.org/pypi>`_
@@ -70,13 +73,13 @@ Python
 - `Matplotlib documentation <http://matplotlib.sourceforge.net/contents.html>`_
 
 Sphinx, reStructuredText
-========================
+------------------------
 
 - `Sphinx documentation <http://sphinx.pocoo.org/>`_
 - `Quick reStructuredText <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_
 
 TeX
-===
+---
 
 - `CTAN <http://ctan.org/>`_
 - `TeX Wiki <http://oku.edu.mie-u.ac.jp/~okumura/texwiki/>`_
@@ -84,7 +87,7 @@ TeX
 - `LaTeX Bibliography Styles Database <http://bst.maururu.net/>`_
 
 RPM 作成
-========
+--------
 
 - `Packaging:Guidelines - Fedora Project <http://fedoraproject.org/wiki/PackagingGuidelines>`_ /
   `Packaging/Guidelines/ja - FedoraProject（和訳） <http://fedoraproject.org/wiki/Packaging/Guidelines/ja>`_
@@ -116,14 +119,14 @@ RPM 作成
    - `Apple Open Source Tarballs <http://opensource.apple.com/tarballs/>`_
 
 文献データベース
-================
+----------------
 
 - `CiteULike <http://www.citeulike.org/>`_
 - `The SAO/NASA Astrophysics Data System <http://adswww.harvard.edu/>`_
 - `Lead2Amazon <http://lead.to/amazon/jp/>`_
 
 新聞
-====
+----
 
 - `New York Times <http://www.nytimes.com/>`_
 - `京都新聞 <http://www.kyoto-np.co.jp/>`_

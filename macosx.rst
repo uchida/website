@@ -1,6 +1,12 @@
 .. -*- coding: utf-8; -*-
 
-MacBook Pro 13-inch Mid 2009
+Mac OS X 備忘録
+===============
+
+インストール時のメモ
+
+:Hardware: MacBook Pro 13-inch Mid 2009
+:OS: Mac OS X 10.7 Lion
 
 Xcode
 -----
@@ -91,9 +97,9 @@ Applications
 
   mercurial での p4merge の設定は `P4Merge - Mercurial <http://mercurial.selenic.com/wiki/P4Merge>`_ 参照
 - `SecondBar <http://blog.boastr.net/?page_id=79>`_
-  デュアルディスプレイ環境でサブモニタにもメニューバーを表示
-  サブモニタを自動認識するために
-  以下の secondbar.sh を用意する。システム環境設定のディスプレイを参照してプロファイル名を適切に設定する。
+  デュアルディスプレイ環境でサブモニタにもメニューバーを表示してくれる。
+
+  サブモニタの有無を確認して、つないでいるときだけ起動するために以下の secondbar.sh を用意する。
 
   .. sourcecode:: sh
 
@@ -102,7 +108,9 @@ Applications
          open -a SecondBar
      fi
 
-  を書いておいて、AppleScript
+  プロファイル名は `system_profiler SPDisplaysDataType` をサブモニタをつないだり、外したりしながら確認する。
+
+  そして、以下のシェルスクリプトを起動するだけの AppleScript
 
   .. sourcecode:: applescript
 
@@ -122,9 +130,13 @@ QuickLook
 ---------
 
 - `QLStephen <http://whomwah.github.com/qlstephen/>`_ 拡張子の無いテキストファイル
-- `QLColorCode <http://code.google.com/p/qlcolorcode/>`_
+- `QLColorCode <http://code.google.com/p/qlcolorcode/>`_ ソースコード等をハイライト表示して QuickLook できる。
+
+  日本語が含まれると文字化けするので
   `QuickLookでソースをカラーリング：QLColorCodeの改良 <http://d.hatena.ne.jp/beehive62/20100802/1280739114>`_
-  を参考に日本語が文字化けしないようにする。
+  を参考に変更する。
+
+  日本語を含む txt ファイルも QuickLook できるようになる。
 
 IME
 ---
