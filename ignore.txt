@@ -1,0 +1,7 @@
+ignore.txt
+Makefile
+tools
+docutils.conf
+*.rst
+*~
+.DS_Store
