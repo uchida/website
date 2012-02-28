@@ -40,6 +40,8 @@
 - `goo辞書 <http://dictionary.goo.ne.jp/>`_
 - `スペースアルク <http://www.alc.co.jp/>`_
 - `理科年表プレミアム（学内） <http://www.rikanenpyo.jp/member/?module-Member&action-Login>`_
+- `Wolfram Math World <http://mathworld.wolfram.com/>`_
+- `NIST Digital Library of Mathematical Functions <http://dlmf.nist.gov/>`_
 - `Yahoo!百科事典 <http://100.yahoo.co.jp/>`_
 - `e-Words <http://e-words.jp/>`_
 
