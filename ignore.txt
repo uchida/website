@@ -5,3 +5,7 @@ docutils.conf
 *.rst
 *~
 .DS_Store
+.localized
+.git
+.gitignore
+README.txt
