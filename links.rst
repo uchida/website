@@ -114,6 +114,7 @@ RPM 作成
 
    - `Fink - Package Database - Introduction <http://pdb.finkproject.org/pdb/index.php>`_
    - `The MacPorts Project - Available Ports <http://www.macports.org/ports.php>`_
+   - `Library/Formula at master from mxcl/homebrew - GitHub <https://github.com/mxcl/homebrew/tree/master/Library/Formula>`_
 
 -  Mac OS X システムの Open Source コード
 
