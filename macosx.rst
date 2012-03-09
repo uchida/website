@@ -29,7 +29,7 @@ Xcode をインストールした後に
 
 コマンドラインでの Install & Setting
 
-.. sourcecode:: sh
+.. code-block:: sh
 
    $ vi .zshrc
    ...
@@ -59,7 +59,7 @@ Xcode をインストールした後に
 
 `uchida/rcfiles - GitHub <https://github.com/uchida/rcfiles>`_ に設定ファイルがある。
 
-.. sourcecode:: sh
+.. code-block:: sh
 
    $ git clone https://uchida@github.com/uchida/rcfiles.git
    $ cd rcfiles
@@ -89,7 +89,7 @@ Applications
   マージツール
   git での p4merge の設定
 
-  .. sourcecode:: sh
+  .. code-block:: sh
 
      $ git config --global merge.tool p4merge
      $ git config --global mergetool.p4merge.cmd '/Applications/p4merge.app/Contents/MacOS/p4merge $BASE $LOCAL $REMOTE $MERGED'
@@ -101,7 +101,7 @@ Applications
 
   サブモニタの有無を確認して、つないでいるときだけ起動するために以下の secondbar.sh を用意する。
 
-  .. sourcecode:: sh
+  .. code-block:: sh
 
      #/bin/sh
      if [ -n "`system_profiler SPDisplaysDataType| grep 'プロファイル名'`" ]; then
@@ -112,7 +112,7 @@ Applications
 
   そして、以下のシェルスクリプトを起動するだけの AppleScript
 
-  .. sourcecode:: applescript
+  .. code-block:: applescript
 
      do shell script "/path/to/secondbar.sh"
 
@@ -148,7 +148,7 @@ IME
 
 ネットワークディスクアクセス時に .DS_Store ファイルを作らないように
 
-.. sourcecode:: sh
+.. code-block:: sh
 
    $ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
@@ -157,7 +157,7 @@ IME
 
 locate を有効に
 
-.. sourcecode:: sh
+.. code-block:: sh
 
    $ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 

@@ -8,7 +8,7 @@
 A minimal front end to the Docutils Publisher, producing HTML.
 """
 
-import sourcecode_directive
+import codeblock
 
 try:
     import locale

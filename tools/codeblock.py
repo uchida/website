@@ -79,5 +79,5 @@ class Pygments(Directive):
         parsed = highlight(u'\n'.join(self.content), lexer, formatter)
         return [nodes.raw('', parsed, format='html')]
 
-directives.register_directive('sourcecode', Pygments)
+directives.register_directive('code-block', Pygments)
 
