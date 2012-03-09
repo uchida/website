@@ -2,6 +2,7 @@
 .localized
 *~
 *.html
+pygments.css
 OSXWS
 calendars
 slides

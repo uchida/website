@@ -7,13 +7,17 @@ DEST = ike-dyn:public_html/
 # source and target
 ALLDOCS = $(basename $(wildcard *.rst))
 ALLHTML = $(addsuffix .html,$(ALLDOCS))
+STYLESHEETS = pygments.css
 
 .PHONY: html
 html: $(ALLHTML)
 
+.PHONY: css
+css: $(STYLESHEETS)
+
 .PHONY: install-web
-install-web: html clean
-	rsync -rlpgoDuv --progress --exclude-from=ignore.txt ./ $(DEST)
+install-web: css html clean
+	rsync -rlpgoDuv --delete --progress --exclude-from=ignore.txt ./ $(DEST)
 
 .PHONY: clean
 clean:
@@ -27,3 +31,5 @@ apt:
 %.html: %.rst
 	$(RST2HTML) $< $@
 
+%.css:
+	pygmentize -S colorful -f html > $@
