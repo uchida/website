@@ -8,7 +8,9 @@ Akihiro Uchida
 Affliation and Contact
 ----------------------
 
-Ph. D. Student D2 - Non-linear Physics Laboratory, Graduate School of Science and Engineering, Ritsumeikan University
+Ph. D. Student D2 - Non-linear Physics Laboratory
+
+Graduate School of Science and Engineering, Ritsumeikan University
 
 :Email: uchida[at-mark]ike-dyn.ritsumei.ac.jp
 :Address: Graduate Student Laboratory 171, West Wing 7F, 1-1-1 Noji higashi, Kusatsu, Shiga 525-8577, Japan
