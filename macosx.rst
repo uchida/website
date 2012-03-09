@@ -29,19 +29,21 @@ Xcode をインストールした後に
 
 コマンドラインでの Install & Setting
 
-.. code-block:: sh
+.. code-block:: console
 
    $ vi .zshrc
    ...
-   # proxy setting for apt
    export http_proxy="http://proxy.ritsumei.ac.jp:3128/"
    export ftp_proxy="http://proxy.ritsumei.ac.jp:3128/"
    ...
-   $ sudo visudo
+   $ sudo visudo # sudo with env_keep proxy variables
    ...
-   # keep proxy setting for apt
    Defaults        env_keep += "http_proxy ftp_proxy"
    ...
+   $ sudo vi /usr/osxws/etc/apt/sources.list.d/addon.list
+   rpm      http://www.ike-dyn.ritsumei.ac.jp/OSXWS 10.7/$(ARCH) main
+   rpm      http://www.ike-dyn.ritsumei.ac.jp/OSXWS 10.7/noarch main
+   rpm-src  http://www.ike-dyn.ritsumei.ac.jp/OSXWS 10.7/$(ARCH) main
    $ sudo apt-get update
    $ sudo apt-get dist-upgrade
    $ sudo apt-get install task-texlive
@@ -57,16 +59,30 @@ Xcode をインストールした後に
 設定
 ----
 
-`uchida/rcfiles - GitHub <https://github.com/uchida/rcfiles>`_ に設定ファイルがある。
+`uchida/rcfiles - GitHub <https://github.com/uchida/rcfiles>`_ にシェルなどの設定ファイルがある。
 
-.. code-block:: sh
+.. code-block:: console
 
    $ git clone https://uchida@github.com/uchida/rcfiles.git
    $ cd rcfiles
    $ make install
 
 make install で設定ファイルを削除するので注意。
-詳細は Makefile 参照。
+詳細は `Makefile at master from uchida/rcfiles - GitHub <https://github.com/uchida/rcfiles/blob/master/Makefile>`_ 参照。
+
+
+`uchida/dot-emacs - GitHub <https://github.com/uchida/dot-emacs>`_ に Emacs の設定がある。
+
+.. code-block:: console
+
+   $ git clone https://uchida@github.com/uchida/dot-emacs.git
+   $ cd dot-emacs
+   $ make install
+
+これも make install で設定ファイルを削除するので注意。
+詳細は `Makefile at master from uchida/dot-emacs - GitHub <https://github.com/uchida/dot-emacs/blob/master/Makefile>`_ 参照。
+
+no-window モードで vimpulse を利用して vim キーバインドを使っているので、一般的な設定にはなっていないと思う。
 
 Applications
 ------------
@@ -83,13 +99,14 @@ Applications
 - `GitX(L) <http://gitx.laullon.com/>`_ Git の Mac OS X クライアント GitX の fork でより高機能
 - `Google Chrome <http://dev.chromium.org/getting-involved/dev-channel>`_ ブラウザ Dev Channel for Mac を利用している
 - `iTerm2 <http://code.google.com/p/iterm2/>`_ ターミナルソフト、標準の Terminal.app より高機能
+  色設定は `effkay/iTerm-argonaut - GitHub <https://github.com/effkay/iTerm-argonaut>`_ を使っている
 - `LibreOffice <http://www.libreoffice.org/>`_ オフィスソフトウェア
 - `LiveQuartz - Mac App Store <http://itunes.apple.com/us/app/livequartz/id402387626>`_ イメージエディタ
 - `p4merge <http://www.perforce.com/product/components/perforce_visual_merge_and_diff_tools>`_
   マージツール
   git での p4merge の設定
 
-  .. code-block:: sh
+  .. code-block:: console
 
      $ git config --global merge.tool p4merge
      $ git config --global mergetool.p4merge.cmd '/Applications/p4merge.app/Contents/MacOS/p4merge $BASE $LOCAL $REMOTE $MERGED'
@@ -108,7 +125,7 @@ Applications
          open -a SecondBar
      fi
 
-  プロファイル名は `system_profiler SPDisplaysDataType` をサブモニタをつないだり、外したりしながら確認する。
+  プロファイル名はサブモニタをつないだり、外したりしながら ``system_profiler SPDisplaysDataType`` を実行して確認する。
 
   そして、以下のシェルスクリプトを起動するだけの AppleScript
 
@@ -136,6 +153,27 @@ QuickLook
   `QuickLookでソースをカラーリング：QLColorCodeの改良 <http://d.hatena.ne.jp/beehive62/20100802/1280739114>`_
   を参考に変更する。
 
+  .. code-block:: diff
+ 
+     diff -uNr QLColorCode.qlgenerator.orig/Contents/Resources/colorize.sh QLColorCode.qlgenerator/Contents/Resources/colorize.sh
+     --- QLColorCode.qlgenerator.orig/Contents/Resources/colorize.sh 2009-09-19 03:01:32.000000000 +0900
+     +++ QLColorCode.qlgenerator/Contents/Resources/colorize.sh  2012-02-28 17:36:18.000000000 +0900
+     @@ -37,12 +37,12 @@
+      cmdOpts=(-I --font $font --quiet --add-data-dir $rsrcDir/override \
+               --data-dir $rsrcDir/highlight/share/highlight \
+               --add-config-dir $rsrcDir/override/config --style $hlTheme \
+     -         --font-size $fontSizePoints --encoding $textEncoding ${=extraHLFlags})
+     +         --font-size $fontSizePoints --encoding $textEncoding utf-8 ${=extraHLFlags})
+      
+      #for o in $cmdOpts; do echo $o\<br/\>; done 
+      
+      debug Setting reader
+     -reader=(cat $target)
+     +reader=(/usr/osxws/bin/nkf -w -Lu $target)
+      
+      debug Handling special cases
+      case $target in
+
   日本語を含む txt ファイルも QuickLook できるようになる。
 
 IME
@@ -148,7 +186,7 @@ IME
 
 ネットワークディスクアクセス時に .DS_Store ファイルを作らないように
 
-.. code-block:: sh
+.. code-block:: console
 
    $ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
@@ -157,7 +195,7 @@ IME
 
 locate を有効に
 
-.. code-block:: sh
+.. code-block:: console
 
    $ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 
