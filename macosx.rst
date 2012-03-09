@@ -163,7 +163,7 @@ QuickLook
                --data-dir $rsrcDir/highlight/share/highlight \
                --add-config-dir $rsrcDir/override/config --style $hlTheme \
      -         --font-size $fontSizePoints --encoding $textEncoding ${=extraHLFlags})
-     +         --font-size $fontSizePoints --encoding $textEncoding utf-8 ${=extraHLFlags})
+     +         --font-size $fontSizePoints --encoding utf-8 ${=extraHLFlags})
       
       #for o in $cmdOpts; do echo $o\<br/\>; done 
       
