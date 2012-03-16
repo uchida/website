@@ -1,3 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+@import url(webfonts/AurulentSans/font.css);
 @charset "UTF-8";
 * {
     margin: 0;
@@ -5,13 +9,13 @@
 }
 body {
     font-size: 0.9em;
-    line-height: 1.4;
-    font-family: "Lucida Grande", "Verdana", sans-serif;
+    line-height: 1.4em;
+    font-family: "Myriad Pro", "PT Sans", "Lucida Grande", "Arial", sans-serif;
     color: #0d0015; /* 漆黒 */
     background-color: #e7e7eb; /* 紫水晶 */
 }
 p {
-    margin: 0px 0px 5px 0px;
+    margin: 0 0 5px 0;
     word-break: normal;
     word-wrap: break-word;
 }
@@ -19,7 +23,7 @@ div.document {
     color: inherit;
     background-color: #ffffff; /* 白 */
     padding: 0px 25px 5px 25px;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 10px;
 }
 div.section{
     margin: 0px 10px 0px 10px;
@@ -29,6 +33,7 @@ h1.title {
     color: #fbfaf5; /* 生成り */
     background-color: #474a4d; /* 藍墨茶 */
     margin-bottom: 5px;
+    padding: 10px 8px;
     text-align: left;
 }
 div.footer {
@@ -42,27 +47,25 @@ div.footer hr {
     display: none;
 }
 h1, h2, h3 {
-    padding: 8px 8px 8px 8px;
-    font-family: "Optima", "Trebuchet MS", sans-serif;
+    font-family: "Optima", "Trebuchet MS", "Aurulent sans", sans-serif;
     font-weight: normal;
-    margin: 4px -25px 4px -25px;
+    margin: 4px -25px;
+    padding: 8px;
 }
 div.section h1, h2, h3 {
     border-bottom: 1px solid #ba2636; /* 朱 */
     color: inherit;
     background-color: #fbfaf5; /* 生成り */
+    font-size: medium;
 }
 div.section h1 {
     border-left: 12px solid #ba2636; /* 朱 */
-    font-size: medium;
 }
 div.section h2 {
     border-left: 8px solid #ba2636; /* 朱 */
-    font-size: medium;
 }
 div.section h3 {
     border-left: 4px solid #ba2636; /* 朱 */
-    font-size: medium;
 }
 a:link {
     color: #ba2636; /* 朱 */
@@ -81,6 +84,9 @@ tr, td, th {
 td {
     padding-left: 1em;
 }
+th.field-name{
+    color: #474a4d; /* 藍墨茶 */
+}
 ul, ol, dl {
     list-style-position: outside;
     padding: 0px;
@@ -89,34 +95,38 @@ li, dt, dd {
     margin: 0px 5px 5px 5px;
 }
 ul {
-    margin: 5px 20px 5px 20px;
+    margin: 5px 20px 5px 10px;
     list-style-type: square;
 }
 ol {
-    margin: 0px 32px 0px 32px;
+    margin: 5px 20px 5px 10px;
 }
 img {
     vertical-align: middle;
     border: none;
 }
-table {
-    margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 10px;
-}
 pre {
-    color: #7b7c7d;
-    background-color: #fbfaf5;
-    margin: 5px 10px 5px 10px;
-    padding: 4px 4px 4px 4px;
-    font-family: "Courier-New", "Consolas", "Lucida Console", monospace;
+    margin: 5px 0px;
+    padding: 4px 0px;
+    font-family: "Consolas", "Inconsolata", "Menlo", "Lucida Console", monospace;
     word-break: normal;
     word-wrap: break-word;
     white-space: pre-wrap;
-    border: 1px solid #ac9; /* 藍墨茶 */
+    border: 1px solid #ac9;
     border-left: none;
     border-right: none;
 }
+blockquote {
+    margin: 10px;
+    padding: 0 10px;
+    background-color: #e7e7eb; /* 紫水晶 */
+    font-family: "Crimson Text", "Palatino", "Book Antiqua", serif;
+}
+p.attribution {
+    text-align: right;
+    font-style: italic;
+}
 address {
-    font-family: "Courier-New", "Consolas", "Lucida Console", monospace;
+    font-family: "Consolas", "Inconsolata", "Menlo", "Lucida Console", monospace;
     font-style: normal;
 }
