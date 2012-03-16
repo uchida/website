@@ -14,7 +14,7 @@
 
 :メール: uchida[at-mark]ike-dyn.ritsumei.ac.jp
 :所在: 〒525-8577 滋賀県草津市野路東1-1-1 ウェストウィング7階 院生研究室171
-:公開鍵: `公開鍵 <public_key.asc>`_
+:公開鍵: `6BF3F057 <public_key.asc>`_
 
 主たる研究テーマ
 ----------------
@@ -22,6 +22,7 @@
 - Hamiltonan 系のカオス
 
   - 特に多自由度の普遍的不安定性機構と呼ばれる Arnold 拡散機構について
+
 - 量子カオス
 
   - 量子多体系での Arnold 拡散の対応物について
@@ -73,6 +74,10 @@
 ------
 
 - `Mac OS X <macosx.html>`_
+
+- `立命館大学学年歴 <http://www.ritsumei.jp/profile/a11_j.html>`_ を変換した
+  `iCal カレンダー <http://www.ike-dyn.ritsumei.ac.jp/~uchida/calendars/>`_
+  2009 年度から 2012 年度まで
 
 ブックマーク
 ------------

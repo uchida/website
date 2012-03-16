@@ -11,11 +11,9 @@
   `立命館大学 <http://www.ritsumei.jp/index_j.html>`_
 - `立命館大学 在学生トップページ <http://www.ritsumei.jp/infostudents/index_j.html>`_
 - `立命館大学図書館 <http://www.ritsumei.ac.jp/acd/mr/lib/>`_
-
    - `Ritsumeikan e-Journal Database（学内） <http://sfx.usaco.co.jp/rits/az>`_
 
 - `立命館統合情報システム -RAINBOW- <http://www.ritsumei.ac.jp/acd/mr/i-system/>`_
-
    - `CyberMail <http://webmail.ritsumei.ac.jp/>`_
 
 - `立命館大学研究部(学内)  <http://www.ritsumei.ac.jp/kenkyu/>`_
