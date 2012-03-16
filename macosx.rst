@@ -41,14 +41,14 @@ Xcode をインストールした後に
    Defaults        env_keep += "http_proxy ftp_proxy"
    ...
    $ sudo vi /usr/osxws/etc/apt/sources.list.d/addon.list
-   rpm      http://www.ike-dyn.ritsumei.ac.jp/OSXWS 10.7/$(ARCH) main
-   rpm      http://www.ike-dyn.ritsumei.ac.jp/OSXWS 10.7/noarch main
-   rpm-src  http://www.ike-dyn.ritsumei.ac.jp/OSXWS 10.7/$(ARCH) main
+   rpm      http://www.ike-dyn.ritsumei.ac.jp/~uchida/OSXWS 10.7/$(ARCH) main
+   rpm      http://www.ike-dyn.ritsumei.ac.jp/~uchida/OSXWS 10.7/noarch main
+   rpm-src  http://www.ike-dyn.ritsumei.ac.jp/~uchida/OSXWS 10.7/$(ARCH) main
    $ sudo apt-get update
    $ sudo apt-get dist-upgrade
    $ sudo apt-get install task-texlive
    $ sudo apt-get install ipython
-   $ sudo apt-get install git git-svn mercurial
+   $ sudo apt-get install mercurial
    $ sudo apt-get install skk
    $ sudo apt-get install python-scipy python-matplotlib
    $ sudo apt-get install python-docutils python-sphinx
