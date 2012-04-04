@@ -1,5 +1,7 @@
 .. -*- coding: utf-8; -*-
 
+.. role:: file(literal)
+
 Mac OS X 備忘録
 ===============
 
@@ -13,13 +15,13 @@ Xcode
 
 `Xcode - Mac App Store <http://itunes.apple.com/jp/app/xcode/id497799835>`_ から入手。
 
-コマンドラインから使うツールだけ欲しい場合には
+Xcode 4.3 から ``/usr/bin/gcc`` などのコマンドラインツールは
+``/Applications/Xcode.app/Contents/Developer/usr/bin`` 以下に含まれるようになり
+``/usr/bin`` にインストールされなくなった。
 
-`Apple Developer <http://developer.apple.com/downloads>`_ から
-Command Line Tools for Xcode のディスクイメージを入手してインストールする。
-
-参考: `XcodeからCommand Line Tools for Xcodeに切り替えたらHDD使用容量が7GB減った - Guide Note -
-<http://blog.glidenote.com/blog/2012/02/20/command-line-tools-for-xcode/>`_
+4.3 以降を新規でインストールした場合
+`Apple Developer <http://developer.apple.com/downloads>`_ にログインして
+Command Line Tools for Xcode をインストールする。
 
 Mac OS X WorkShop
 -----------------
@@ -67,7 +69,7 @@ Xcode をインストールした後に
    $ cd rcfiles
    $ make install
 
-make install で設定ファイルを削除するので注意。
+``make install`` で設定ファイルを削除するので注意。
 詳細は `Makefile at master from uchida/rcfiles - GitHub <https://github.com/uchida/rcfiles/blob/master/Makefile>`_ 参照。
 
 
@@ -79,7 +81,7 @@ make install で設定ファイルを削除するので注意。
    $ cd dot-emacs
    $ make install
 
-これも make install で設定ファイルを削除するので注意。
+これも ``make install`` で設定ファイルを削除するので注意。
 詳細は `Makefile at master from uchida/dot-emacs - GitHub <https://github.com/uchida/dot-emacs/blob/master/Makefile>`_ 参照。
 
 no-window モードで vimpulse を利用して vim キーバインドを使っているので、一般的な設定にはなっていないと思う。
