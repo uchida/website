@@ -8,7 +8,7 @@ Akihiro Uchida
 Affiliation and Contact
 -----------------------
 
-Ph. D. Student D2 - Non-linear Physics Laboratory
+Ph. D. Student D3 - Non-linear Physics Laboratory
 
 Graduate School of Science and Engineering, Ritsumeikan University
 
