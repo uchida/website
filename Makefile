@@ -27,6 +27,8 @@ clean:
 apt:
 	genbasedir -s --progress --bz2only `pwd`/OSXWS/10.7/x86_64 main
 	genbasedir -s --progress --bz2only `pwd`/OSXWS/10.7/noarch main
+	genbasedir -s --progress --bz2only `pwd`/OSXWS/dev/x86_64 main
+	genbasedir -s --progress --bz2only `pwd`/OSXWS/dev/noarch main
 
 %.html: %.rst
 	$(RST2HTML) $< $@
