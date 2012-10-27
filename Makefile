@@ -4,6 +4,8 @@ RST2HTML = python tools/rst2html.py
 # destination to push
 DEST = ike-dyn:public_html/
 
+# PGP public key id
+KEYID = 6bf3f057
 # source and target
 ALLDOCS = $(basename $(wildcard *.rst))
 ALLHTML = $(addsuffix .html,$(ALLDOCS))
@@ -62,4 +64,4 @@ OSXWS/10.5/noarch/base/release: $(wildcard OSXWS/10.5/noarch/RPMS.main/*.rpm)
 
 .PHONY: sign
 sign:
-	python sign.py
+	python tools/sign.py -d OSXWS $(KEYID)

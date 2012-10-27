@@ -9,4 +9,3 @@ docutils.conf
 .git
 .gitignore
 README.txt
-sign.py
