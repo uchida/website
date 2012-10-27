@@ -40,8 +40,6 @@
   メンテナンスしているパッケージは `OSXWS <OSXWS/>`_ から入手可能です。
   これらのパッケージは一定期間後、Mac OS X WorkShop の main tree に取り込まれます。
 
-  注意：10.X-test 以下の rpm ファイルは個人的用途のものなので、OSXWS の main tree には取り込まれません。
-
 - `Python ドキュメント日本語翻訳プロジェクト <http://code.google.com/p/python-doc-ja/>`_ 翻訳
 
 翻訳
@@ -78,6 +76,7 @@
 - `立命館大学学年歴 <http://www.ritsumei.jp/profile/a11_j.html>`_ を変換した
   `iCal カレンダー <http://www.ike-dyn.ritsumei.ac.jp/~uchida/calendars/>`_
   2009 年度から 2012 年度まで
+  (2012年度は `Google Refine <http://code.google.com/p/google-refine/>`_ を利用して作成しました。)
 
 ブックマーク
 ------------

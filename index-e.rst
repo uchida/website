@@ -40,8 +40,6 @@ Activities
   Maintained packages are available in `OSXWS <OSXWS>`_.
   These packages will be available in the main tree of Mac OS X WorkShop with some duration.
 
-  note: files in 10.X-test are rpm for private use, so it will not available in the OSXWS main tree.
-
 - `python-doc-ja <http://code.google.com/p/python-doc-ja/>`_ Committer
 
 Bookmark (in Japanese)
