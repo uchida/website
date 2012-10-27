@@ -59,3 +59,7 @@ OSXWS/10.5/fat/base/release: $(wildcard OSXWS/10.5/fat/RPMS.main/*.rpm)
 	genbasedir -s --progress --bz2only `pwd`/OSXWS/10.5/fat main
 OSXWS/10.5/noarch/base/release: $(wildcard OSXWS/10.5/noarch/RPMS.main/*.rpm)
 	genbasedir -s --progress --bz2only `pwd`/OSXWS/10.5/noarch main
+
+.PHONY: sign
+sign:
+	python sign.py
